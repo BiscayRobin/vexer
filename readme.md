@@ -25,7 +25,7 @@ Vexer is a library that implement C++ like vectors.
  - [X] reserve
  - [X] resize
  - [ ] assign
- - [ ] data
+ - [X] data
  - [ ] erase
  - [ ] swap
 
