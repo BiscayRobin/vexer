@@ -87,6 +87,18 @@ vector *vector_new() {
 
 void vector_delete(vector *v) { free(v->items); }
 
+void vector_swap(vector *left, vector *right) {
+    vector tmp = {left->capacity, left->items, left->total};
+
+    left->capacity = right->capacity;
+    left->items = right->items;
+    left->total = right->total;
+
+    right->capacity = tmp.capacity;
+    right->items = tmp.items;
+    right->total = tmp.total;
+}
+
 void vector_display(vector *v, void (*display_func)(void *)) {
     printf("[");
     if (v->total == 0) {
