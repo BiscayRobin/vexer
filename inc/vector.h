@@ -24,7 +24,7 @@ void **vector_data(vector *v);
 bool vector_empty(vector *v);
 size_t vector_size(vector *v);
 size_t vector_capacity(vector *v);
-size_t vector_maxSize(vector *v);
+size_t vector_maxSize();
 void vector_insert(vector *v, size_t index, void *item);
 void vector_clear(vector *v);
 void vector_shrinkToFit(vector *v);

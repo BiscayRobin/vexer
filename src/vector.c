@@ -26,10 +26,7 @@ bool vector_empty(vector *v) { return !v->total; }
 
 size_t vector_size(vector *v) { return v->total; }
 
-size_t vector_maxSize(vector *v) {
-    (void)v;
-    return SIZE_MAX;
-}
+size_t vector_maxSize() { return SIZE_MAX; }
 
 void vector_resize(vector *v, size_t size) {
     void **items = realloc(v->items, sizeof(void *) * size);
@@ -88,7 +85,8 @@ vector *vector_new() {
 void vector_delete(vector *v) { free(v->items); }
 
 void vector_swap(vector *left, vector *right) {
-    vector tmp = {left->capacity, left->items, left->total};
+    vector tmp = {
+        .items = left->items, .capacity = left->capacity, .total = left->total};
 
     left->capacity = right->capacity;
     left->items = right->items;
