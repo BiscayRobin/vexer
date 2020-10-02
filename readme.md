@@ -117,7 +117,7 @@ Vexer is a library that implement C++ like vectors.
 	vector_resize(c, 30); // same as reserve();
 
 	vector_resize(c, 15); // be carefull all data above this point will be lost
- - [ ] assign
+	```
  - [X] data
 	  ```C
 	vector *c = vector_new();
