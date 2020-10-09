@@ -9,7 +9,7 @@ Vexer is a library that implement C++ like vectors.
 
 ## installation
 
-using ssh clone: `git clone git@github.com:BiscayRobin/vexer.git`
+using ssh clone: `git clone git@github.com:BiscayRobin/vexer.git` <br>
 using git cli: `gh repo clone BiscayRobin/vexer`
 
 ```bash
