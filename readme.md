@@ -7,6 +7,17 @@ Vexer is a library that implement C++ like vectors.
 - C++: `v.XXX(args)`
 - C: `vector_XXX(vector* v, args)`
 
+## installation
+
+using ssh clone: `git clone git@github.com:BiscayRobin/vexer.git`
+using git cli: `gh repo clone BiscayRobin/vexer`
+
+```bash
+cd vexer
+mkdir build; cd build
+sudo make install
+```
+
 ## Already implemented
  - [X] new :
 	  ```C
