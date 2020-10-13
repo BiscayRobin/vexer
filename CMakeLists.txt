@@ -20,3 +20,10 @@ install(TARGETS vexer
 install(FILES ${CMAKE_BINARY_DIR}/vexer.pc
 	DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig
 )
+if (MSVC)
+    	# warning level 4 and all warnings as errors
+    	add_compile_options(/W4 /WX)
+else()
+    	# lots of warnings and all warnings as errors
+    	add_compile_options(-Wall -Wextra -pedantic -Werror)
+endif()
