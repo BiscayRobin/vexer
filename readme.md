@@ -135,7 +135,14 @@ sudo make install
 
 	void ** res = vector_data(c);
 	```
- - [ ] erase
+ - [X] erase
+	  ```C
+	vector *c = vector_new();
+	vector_push(c, "Talofa!");
+	vector_push(c, "Salut!");
+
+	vector_erase(c, 0);
+	```
  - [X] swap
 	  ```C
 	vector *c = vector_new();

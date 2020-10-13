@@ -97,6 +97,15 @@ void vector_swap(vector *left, vector *right) {
     right->total = tmp.total;
 }
 
+void vector_erase(vector *v, size_t index) {
+    if (index > v->total)
+        return;
+
+    memmove(vector_data(v) + index, vector_data(v) + index + 1,
+            v->total - index - 1);
+    v->total--;
+}
+
 void vector_display(vector *v, void (*display_func)(void *)) {
     printf("[");
     if (v->total == 0) {

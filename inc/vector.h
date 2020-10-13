@@ -30,5 +30,6 @@ void vector_clear(vector *v);
 void vector_shrinkToFit(vector *v);
 void vector_reserve(vector *v, size_t size);
 void vector_resize(vector *v, size_t size);
+void vector_erase(vector *v, size_t index);
 
 #endif
