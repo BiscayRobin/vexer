@@ -85,8 +85,11 @@ vector *vector_new() {
 void vector_delete(vector *v) { free(v->items); }
 
 void vector_swap(vector *left, vector *right) {
-    vector tmp = {
-        .items = left->items, .capacity = left->capacity, .total = left->total};
+    vector tmp = { 
+	    .items = left->items, 
+	    .capacity = left->capacity, 
+	    .total = left->total
+    };
 
     left->capacity = right->capacity;
     left->items = right->items;
